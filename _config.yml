@@ -11,3 +11,5 @@ github_username:  ssricardo
 
 # Build settings
 markdown: kramdown
+
+theme: jekyll-theme-midnight
