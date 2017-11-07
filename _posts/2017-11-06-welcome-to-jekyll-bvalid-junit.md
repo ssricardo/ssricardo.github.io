@@ -1,5 +1,5 @@
 ---
-layout: inner
+layout: post
 title:  "Junit and Bean Validation"
 date:   2017-11-06 18:00:00 -0200
 categories: java junit validation
@@ -30,4 +30,4 @@ Use `ConstraintViolationRule` for this goal.  As any Junit Rule, basically you n
 
 The above code will make *ConstraintViolationRule* catch and print the violations for tests in the same class.  If you prefer a different behavior instead of only printing it, just modify it in *ConstraintViolationRule* class.
 
-This utility is available in [ConstraintViolationRule](../java/ConstraintViolationRule.java).
+This utility is available in [ConstraintViolationRule](https://github.com/ssricardo/lab/blob/master/java/ConstraintViolationRule.java).
