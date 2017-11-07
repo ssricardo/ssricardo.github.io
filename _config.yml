@@ -1,15 +1,43 @@
 # Site settings
 title: Ricardo's Notes
-#email: __rs@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  This site will contain some useful code and tips (I hope) for developers.  
-  Specially focused on Java.
-baseurl: "" 
-url: "http://ssricardo.github.io"
-#twitter_username: noooo
-github_username:  ssricardo
+description: 'Some coding utilities and tips...'
+url: 'https://ssricardo.github.io'
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Ricardo'
+  #email: josh@joshgerdes.com
+  #twitter_username: ...
+  #facebook_username: ....
+  github_username:  ssricardo
+  #linkedin_username:  ...
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 # Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
+highlighter: rouge
 
-theme: jekyll-theme-tactile
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
