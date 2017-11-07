@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Junit and Bean Validation"
 date:   2017-11-06 18:00:00 -0200
 categories: java junit validation
