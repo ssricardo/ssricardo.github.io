@@ -5,8 +5,6 @@ date:   2017-11-06 18:00:00 -0200
 categories: java junit validation
 ---
 
-# Junit and Bean Validation
-
 Sometimes you need to test something which uses *Bean Validation*. For instance, you are using JPA and your entities use Bean Validation. In this case, if you have any implementation of jsr-303 (like hibernate validation), it will run automatically on JPA calls.  
 
 In the above case, the test can throw `javax.validation.ConstraintViolationException`.
