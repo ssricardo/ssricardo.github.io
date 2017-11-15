@@ -47,8 +47,8 @@ Then the application was migrated to Spring Boot with embedded Tomcat. Consequen
 
 **Application Class**
 
-The starting point is to create the **main** class and annotate it with `@SpringBootApplication`. 
-Starting from this class, Spring will scan the classpath and load the found configurations .
+The starting point is to create the **main** class and to annotate it with `@SpringBootApplication`. 
+Starting from this class, Spring will scan the classpath and load the found settings.
 
 **web.xml -> Java**
 
