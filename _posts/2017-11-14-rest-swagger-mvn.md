@@ -5,7 +5,7 @@ date:   2017-11-14 00:00:00 -0200
 categories: rest documentation java swagger maven
 ---
 
-> The below article was based in a configuration I had to do in an application which I've worked. After some problems of a library (jackson) conflicting between the container version and Swagger dependency, a different approach was thought.
+> The below article was based on a configuration I had to do in an application which I've worked. After some problems of a library (jackson) conflicting between the container version and Swagger dependency, a different approach was thought.
 
 ## Pre requirements
 
@@ -22,7 +22,7 @@ Basically, it's based on one file, a JSON, in which the documentation is organiz
 To manage the *swagger.json* file, it's provided the *Swagger Editor* tool. However, this approach to generate and maintain this file manually will likely lead to problems, like the file becoming outdated.   
 A better idea, instead of writing *swagger.json* manually, would be getting it generated from the source code. This is possible through Swagger API. In Java, this is done through some annotations in the source code itself. 
 
-> Swagger support others languages besides Java. Take a look at its documentation.
+> Swagger supports other languages besides Java. Take a look at its documentation.
 
 ### Configuration overview
 
@@ -54,7 +54,7 @@ In order to get this scenario working, the following steps are required:
 	    * SwaggerSerializers.class;		
 * In each service, annotate the classe with `@Api` and the methods with `@ApiOperation`
 
-> There are other alternative providers, but those mentioned above are sufficient already
+> There are other alternative providers, but those mentioned above are already sufficient 
 
 In both cases, you need to copy the UI files directly from [*swagger-ui*](https://github.com/swagger-api/swagger-ui) to your local project (Caution: the version of swagger-ui must be [compatible](https://github.com/swagger-api/swagger-ui#compatibility) with API version).
 
@@ -64,9 +64,9 @@ In both cases, you need to copy the UI files directly from [*swagger-ui*](https:
 
 For the sake of getting *swagger.json* generated in runtime, Swagger is used as a regular library, which has rather dependencies on other libraries. 
 The side effect of this is that it increases the risk of conflicts; besides, it restricts the project dependencies to a version compatible with Swagger.  
-For instance, *Jackson* (*jackson-jaxrs-json-provider*) is one of its dependencies; the same library is required by other frameworks or it's is even already available in the Java EE server (like Weblogic). In our company, in a scenerio like this, it wasn't possible to use the container's version, duo to incompability. In this case it's necessary to package it and force the container to prefer the packaged version.  
+For instance, *Jackson* (*jackson-jaxrs-json-provider*) is one of its dependencies; the same library is required by other frameworks or it is  even already available in the Java EE server (like Weblogic). In our company, in a scenario like this, it wasn't possible to use the container's version, due to incompatibility. In this case, it's necessary to package it and force the container to prefer the packaged version.  
 
-Considering that API documentation will never be modified in runtime (it references the code - it won't be modified without a new version of the application), it's not necessary to  have this generated in runtime.  
+Considering that API documentation will never be modified in runtime (it references the code - it won't be modified without a new version of the application), it's not necessary to  have it generated in runtime.  
 
 In such a way, the idea is:
 
@@ -124,7 +124,7 @@ Although there is still one dependency on swagger in the project, it is a more r
 			<scope>provided</scope>
 		</dependency>
 
-Furthermore it isn't necessary to package and configure Jackson, Scala and other libs.
+Furthermore, it isn't necessary to package and configure Jackson, Scala and other libs.
 Done! You can use Swagger auto generated documentation, without having it packaged.  
 
 *!EOF*
