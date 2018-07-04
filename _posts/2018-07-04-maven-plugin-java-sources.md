@@ -5,6 +5,8 @@ date:   2018-07-04 00:00:00 -0300
 categories: java maven plugin source
 ---
 
+> This article shows the basics about creating a custom Maven plugin. And how to get java sources in it.
+
 ## Before getting started
 
 Just brushing up maven plugins basics:  
@@ -41,7 +43,7 @@ We can either customize something from a default plugin or add extra plugins. Fo
 
 Each plugin has one or more goals. Goal represent an action itself.  These goals may be attached to a phase, this is not required though. 
 
-> Before creating a custom plugin, you are supposed to have a good understanding of how to use Maven plugins (goals and phases).  
+> Before creating a custom plugin, you are should have a good understanding of how to use Maven plugins (goals and phases).  
 
 ## Custom Maven plugin
 
