@@ -56,9 +56,9 @@ Therefore, testing a Lexer is meant to **check whether a text is interpreted as 
 At first, let's create a method with some boilerplate code to invoke the Lexer processing:  
 
         private fun getTokensFromText(txt: String): List<Token> {
-            val iStream = ByteArrayInputStream(txt.toByteArray())
-            val cStream = CharStreams.fromStream(iStream)
-            val lex = MyLexer(cStream)
+            val iStream = /*new */ByteArrayInputStream(txt.toByteArray())
+            val cStream = /*new */CharStreams.fromStream(iStream)
+            val lex = /*new */MyLexer(cStream)
             lex.addErrorListener(errorListener)     // listener
             val tokenStream = CommonTokenStream(lex)
             tokenStream.fill()
@@ -80,9 +80,9 @@ Given the above method, now we just need to test some *strings* and check the to
         val tokens = getTokensFromText("function ()")
 
         assertEquals(4, tokens.size) // includes EOF
-        assertEquals(MplLexer.WORD, tokens[0].type)
-        assertEquals(MplLexer.OPEN_PAR, tokens[1].type)
-        assertEquals(MplLexer.CLOSE_PAR, tokens[2].type)
+        assertEquals(MyLexer.WORD, tokens[0].type)
+        assertEquals(MyLexer.OPEN_PAR, tokens[1].type)
+        assertEquals(MyLexer.CLOSE_PAR, tokens[2].type)
     }
 
 ## Final notes
