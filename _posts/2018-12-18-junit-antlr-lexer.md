@@ -26,7 +26,7 @@ This article shows a way make a unit test for the Lexer.
 ## Lexer
 
 The *Lexer* part is responsible for converting a character or string into tokens. These rules are the first ones to be processed.  
-Lexer rules are described as LOWER_CASE. They might be either in the same files as parser rules or a separate file.  
+Lexer rules are described as UPPER_CASE. They might be either in the same files as parser rules or a separate file.  
 
 For instance, for the rule `BOOLEAN : 'true' | 'false' ;`, when the Lexer processes a text file, when it matches a *true* or a *false* string, it will turn it into a *BOOLEAN* token.  
 
