@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
 title:  "Unit tests for ANTLR parser"
 date:   2018-12-19 00:00:00 -0300
-categories: antlr java compiler parser test
+categories: [java, antlr, testing]
+tags: [java, antlr, testing]
 ---
 
 As said in the previous post, it's hard to find resources about how to make unit tests for ANTLR components.  

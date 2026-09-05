@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
 title:  "From Java EE to Spring Boot"
 date:   2017-11-08 20:00:00 -0200
-categories: java spring boot
+categories: [java, spring]
+tags: [java, spring]
 ---
 
 > This article is based on notes took in a a migration of a Java EE (EJB + JSF) application to Spring. It approaches an overview of Spring Boot aspects and established a small comparison with Java EE. 

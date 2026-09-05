@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
 title:  "Weblogic Session Memory Analysis"
 date:   2018-07-11 00:00:00 -0300
-categories: java weblogic memory session heap analysis
+categories: [java, memory]
+tags: [java, memory]
 ---
 
 > **QUICK TIP** about memory analysis of the Web Session on Weblogic.

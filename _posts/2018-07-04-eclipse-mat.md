@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
 title:  "Java Memory Analysis with Eclipse MAT"
 date:   2018-07-04 00:00:00 -0300
-categories: java memory eclipse mat analysis heap
+categories: [java, memory, tooling]
+tags: [java, memory, tooling]
 ---
 
 > This articles show an introduction to memory analysis in Java applications. It shows an overview of heap dump and the Eclipse MAT tool.

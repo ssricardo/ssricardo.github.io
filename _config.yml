@@ -1,18 +1,18 @@
 # Site settings
 title: Ricardo's Notes
-description: 'Some coding utilities and tips...'
+description: 'Articles about Java, JVM tooling, AI harnesses, add-ons, and side projects.'
 url: 'https://ssricardo.github.io'
 baseurl: ''
+favicon: '/images/favicons/favicon.ico'
+theme: 'jekyll-theme-yat'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
-author:
-  name: 'Ricardo'
-  #email: josh@joshgerdes.com
-  #twitter_username: ...
-  #facebook_username: ....
-  github_username:  ssricardo
-  #linkedin_username:  ...
+author: Ricardo
+
+lang: en
+translate_langs: []
+night_mode: 'on'
 
 defaults:
   -
@@ -20,14 +20,38 @@ defaults:
       path: ''
       type: 'posts'
     values:
-        layout: 'post'
-
+      layout: 'post'
+  -
+    scope:
+      path: ''
+      type: 'pages'
+    values:
+      layout: 'page'
+  -
+    scope:
+      path: ''
+    values:
+      image: '/images/cover.jpg'
+      banner:
+        height: '350px'
+        min_height: '240px'
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      sidebar:
+        - article-menu
 # Build settings
 destination: _site
 paginate: 10
 permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
+header_pages:
+  - index.html
+  - categories.md
+  - about.md
 
 sass:
     sass_dir: _sass
@@ -39,5 +63,10 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-spaceship
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'tmp-new-articles']

@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
 title:  "Unit tests for ANTLR Lexer"
 date:   2018-12-18 00:00:00 -0300
-categories: antlr java compiler test junit
+categories: [java, antlr, testing]
+tags: [java, antlr, testing]
 ---
 
 > From ANTLR website: "ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files. It's widely used to build languages, tools, and frameworks. From a grammar, ANTLR generates a parser that can build and walk parse trees."

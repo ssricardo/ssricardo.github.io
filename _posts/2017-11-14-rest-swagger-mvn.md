@@ -1,8 +1,9 @@
 ---
-layout: page
-title:  "Documenting REST APIs With Swagger"
+layout: post
+title:  "API Generation in the Build Pipeline"
 date:   2017-11-14 00:00:00 -0200
-categories: rest documentation java swagger maven
+categories: [java, rest, tooling]
+tags: [java, rest, tooling]
 ---
 
 > The below article was based on a configuration I had to do in an application which I've worked. After some problems of a library (jackson) conflicting between the container version and Swagger dependency, a different approach was thought.

@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: post
 title:  "Creating a Maven Plugin for Java Sources Processing"
 date:   2018-07-04 00:00:00 -0300
-categories: java maven plugin source
+categories: [java, maven, tooling]
+tags: [java, maven, tooling]
 ---
 
 > This article shows the basics about creating a custom Maven plugin. And how to get java sources in it.
