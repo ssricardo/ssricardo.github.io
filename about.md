@@ -13,7 +13,7 @@ You’ll sometimes find me building custom desktop tools, crafting mobile apps, 
     <p class="about-highlight__number">5</p>
     <h2>Oracle Java certifications</h2>
     <p>Verified professional certifications across the Java ecosystem. <small>4 are  Expert-level.</small></p>
-    <a href="https://www.credly.com/users/ricardo-silva.1462c634/badges/credly">View credentials on Credly</a>
+    <a href="https://www.credly.com/users/ricardo-ss11/badges/credly">View credentials on Credly</a>
   </article>
   <article class="about-highlight">
     <p class="about-highlight__number">330k+</p>
